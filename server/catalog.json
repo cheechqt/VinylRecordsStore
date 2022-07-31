@@ -1,0 +1,83 @@
+{
+  "items":[
+  {
+    "id": 1,
+    "title": "The Beatles: Abbey Road Anniversary 1LP",
+    "length": 17,
+    "duration": "93:04",
+    "price": "$30.08",
+    "imgSrc": "beatles.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Michael Jackson: Thriller",
+    "length": 9,
+    "duration": "48:43",
+    "price": "$21.64",
+    "imgSrc": "michael.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Kendrick Lamar: Good Kid M.A.A.D City",
+    "length": 15,
+    "duration": "68:23",
+    "price": "$30.08",
+    "imgSrc": "KendrickLamar.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Duke Ellington & John Coltrane",
+    "length": 8,
+    "duration": "35:05",
+    "price": "$19.59",
+    "imgSrc": "duke-ellington-john-coltrane.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Billie Eilish: Happier Than Ever 2 LP",
+    "length": 16,
+    "duration": "65:05",
+    "price": "$34.98",
+    "imgSrc": "bellie-eilish.png"
+  },
+  {
+    "id": 6,
+    "title": "Foo Fighters: Greatest Hits",
+    "length": 16,
+    "duration": "67:15",
+    "price": "$24.51",
+    "imgSrc": "foo-fighters.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Creedence Clearwater Revival: Chronicle",
+    "length": 20,
+    "duration": "85:23",
+    "price": "$29.98",
+    "imgSrc": "creedence.jpg"
+  },
+  {
+    "id": 8,
+    "title": "John Coltrane: Coltrane",
+    "length": 7,
+    "duration": "31:34",
+    "price": "$19.59",
+    "imgSrc": "coltrane1957.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Amy Winehouse: Back to Black",
+    "length": 11,
+    "duration": "47:32",
+    "price": "$39.99",
+    "imgSrc": "amy-winehouse.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Patsy Cline: Showcase",
+    "length": 14,
+    "duration": "44:14",
+    "price": "$19.59",
+    "imgSrc": "patsy-clean.jpg"
+  }
+]}

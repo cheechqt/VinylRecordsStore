@@ -1,0 +1,238 @@
+.cart-icon {
+  position: fixed;
+  top: 100px;
+  right: 50px;
+  background-color: var(--bisque);
+  padding: 10px 12px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.459);
+  cursor: pointer;
+}
+
+.cart-icon--hidden{
+  display: none;
+}
+
+.cart-icon__img {
+  width: 40px;
+  height: 40px;
+}
+
+.cart-icon__counter{
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 16px;
+  background-color: var(--burlywood);
+  border-radius: 50%;
+  padding: 0px 7px 0px;;
+}
+
+.popup {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0, 0.7);
+}
+
+.popup--hidden {
+  display: none;
+}
+
+.popup__body {
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 10px;
+}
+
+.popup__content {
+  position: relative;
+  background-color: var(--bisque);
+  border-radius: 10%;
+}
+
+.popup__close {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+}
+
+.aside {
+  flex: 0 0 33.3%;
+  max-width: 350px;
+}
+
+.aside__container {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  padding: 20px 20px;
+}
+
+.aside__body {}
+
+.aside__body-title {
+  margin: 0 0 12px;
+  font-size: 20px;
+}
+
+.aside__body-empty-cart {
+  width: 100%;
+  color: #383d41;
+  background-color: #adafb1;
+  border-color: #d6d8db;
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+
+.aside__body-items {}
+
+.aside__body-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, .125);
+  margin-bottom: 15px;
+}
+
+.aside__item-img {
+  max-width: 100px;
+  border-radius: 12%;
+}
+
+.aside__item-description {
+  padding: 15px 0 0 15px;
+}
+
+.aside__item-title {
+  font-size: 16px;
+  margin: 0 0 5px 0;
+}
+
+.aside__item-subtitle {
+  color: #6c757d;
+  font-size: 80%;
+  line-height: 1;
+  margin-bottom: 15px;
+}
+
+.aside__item-details {
+  display: flex;
+  align-items: center;
+}
+
+.aside__item-counter {
+  border-radius: 10px;
+  width: 90px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  overflow: hidden;
+  height: 26px;
+  background: #adafb1;
+}
+
+.aside__counter-minus {
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  text-align: center;
+}
+
+.aside__counter-minus:hover {
+  background-color: #eb5a1e;
+}
+
+.aside__counter-current {
+  text-align: center;
+  width: 30px;
+  height: 26px;
+}
+
+.aside__counter-plus {
+  width: 30px;
+  height: 26px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+  text-align: center;
+}
+
+.aside__counter-plus:hover {
+  background-color: #eb5a1e;
+}
+
+.aside__item-currency {
+  margin: 0 0 0 15px;
+  font-size: 18px;
+}
+
+.aside__body-total {}
+
+.shipping-text {}
+
+.shipping-cost {}
+
+.total-text {}
+
+.total-cost {}
+
+.aside__form {
+  display: none;
+  padding: 20px 5px 5px 5px;
+  border-top: 1px solid rgba(0, 0, 0, .125);
+}
+
+.aside__form-title {
+  font-size: 20px;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.aside__form-input {
+  font-family: inherit;
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background-color: #adafb1;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  margin-bottom: 15px;
+}
+
+.aside__form-btn {
+  font-family: inherit;
+  color: #000000;
+  background-color: transparent;
+  border: 1px solid #eb5a1e;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  cursor: pointer;
+}
+
+.aside__form-btn:hover {
+  background-color: #eb5a1e;
+}

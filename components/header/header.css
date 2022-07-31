@@ -1,0 +1,48 @@
+.header {
+  z-index: -1;
+  background-image: url(../../img/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.header::before {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgb(0, 0, 0, 0.5);
+}
+
+.header__top {
+
+  color: bisque;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 300px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__title {
+  font-size: 3.5rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.header__subitle {
+  font-size: 1.25rem;
+}
+
+@media (max-width: 440px) {
+  .header__top {
+    padding: 50px 15px;
+  }
+}
