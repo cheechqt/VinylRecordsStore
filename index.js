@@ -62,7 +62,7 @@ fetch("http://localhost:3000/items")
     render();
   })
   .catch(() => {
-    // spinnerContainer.handleClearSpinner();
-    // errorContainer.render()
+    spinnerContainer.handleClearSpinner();
+    errorContainer.render()
   });
 
