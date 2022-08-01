@@ -71,23 +71,49 @@ class ShoppingCart {
     }
   }
 
+  // render() {
+  //   const productsStore = localStorageUtil.getProducts();
+  //   let htmlCatalog = '';
+
+
+  //   CATALOG.forEach(({ id, title, length, duration, price, imgSrc }) => {
+  //     let indexInStorage = -1;
+
+  //     productsStore.forEach(obj => {
+  //       if (obj.id == id) {
+  //         indexInStorage = productsStore.indexOf(obj);
+  //       }
+  //     })
+
+  //     if (indexInStorage !== -1) {
+  //       const count = productsStore[indexInStorage].count
+  //       htmlCatalog += ` <div class="aside__body-item" data-id="${id}">
+  //             <img class="aside__item-img" src="img/content/${imgSrc}" alt="album cover"></img>
+  //             <div class="aside__item-description">
+  //               <h6 class="aside__item-title">${title}</h6>
+  //               <div class="aside__item-subtitle">${length} / ${duration}</div>
+  //               <div class="aside__item-details">
+  //                 <div class="aside__item-counter">
+  //                   <div class="aside__counter-minus" onclick="shoppingCartContainer.handleMinusCountInStorage(${id},${count},${indexInStorage})">-</div>
+  //                   <div class="aside__counter-current">${count}</div>
+  //                   <div class="aside__counter-plus" onclick="shoppingCartContainer.handlePlusCountInStorage(${id})">+</div>
+  //                 </div>
+  //                 <div class="aside__item-currency">${price}</div>
+  //               </div>
+  //             </div>
+  //           </div>`
+  //     }
+  //   })
   render() {
-    const productsStore = localStorageUtil.getProducts();
+    const products = localStorageUtil.getProducts();
     let htmlCatalog = '';
 
+    
+    products.forEach(({ id, count }, indexInStorage) => {
 
-    CATALOG.forEach(({ id, title, length, duration, price, imgSrc }) => {
-      let indexInStorage = -1;
+      const { title, length, duration, price, imgSrc } = CATALOG.find(item => item.id == id);
 
-      productsStore.forEach(obj => {
-        if (obj.id == id) {
-          indexInStorage = productsStore.indexOf(obj);
-        }
-      })
-
-      if (indexInStorage !== -1) {
-        const count = productsStore[indexInStorage].count
-        htmlCatalog += ` <div class="aside__body-item" data-id="${id}">
+          htmlCatalog += ` <div class="aside__body-item" data-id="${id}">
               <img class="aside__item-img" src="img/content/${imgSrc}" alt="album cover"></img>
               <div class="aside__item-description">
                 <h6 class="aside__item-title">${title}</h6>
@@ -102,7 +128,6 @@ class ShoppingCart {
                 </div>
               </div>
             </div>`
-      }
     })
 
     const html = `
