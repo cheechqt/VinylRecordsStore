@@ -8,6 +8,7 @@ class ShoppingCart {
   handleToggleCartVisibility() {
     const popup = document.querySelector(".popup");
     popup.classList.toggle("popup--hidden");
+    document.body.classList.toggle("noscroll");
   }
 
   handleMinusCountInStorage(id, count, indexInStorage) {
@@ -66,7 +67,7 @@ class ShoppingCart {
       emptyCart.style.display = "block";
       orderBlock.style.display = "none";
       icon.classList.add("cart-icon--hidden")
-      localStorageUtil.removeProduct(0);
+      localStorageUtil.clearStorage();
     }
   }
 

@@ -36,6 +36,11 @@
   right: 0;
   bottom: 0;
   background: rgb(0, 0, 0, 0.7);
+  overflow-y: scroll;
+}
+
+.noscroll {
+  overflow: hidden;
 }
 
 .popup--hidden {
@@ -53,7 +58,7 @@
 .popup__content {
   position: relative;
   background-color: var(--bisque);
-  border-radius: 10%;
+  border-radius: 10px;
 }
 
 .popup__close {

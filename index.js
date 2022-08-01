@@ -47,7 +47,8 @@ function changeCounter(event) {
 function render() {
   headerContainer.render();
   productsContainer.render();
-  shoppingCartContainer.render()
+  shoppingCartContainer.render();
+  footerContainer.render();
 }
 
 spinnerContainer.render();
@@ -62,7 +63,7 @@ fetch("http://localhost:3000/items")
     render();
   })
   .catch(() => {
-    spinnerContainer.handleClearSpinner();
-    errorContainer.render()
+    // spinnerContainer.handleClearSpinner();
+    // errorContainer.render()
   });
 

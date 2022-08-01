@@ -29,17 +29,33 @@ class LocalStorageUtil {
       obj.count += count;
       products[indexInStorage] = obj
       localStorage.setItem(this.keyName, JSON.stringify(products));
+      this.checkStorage()
     } else {
       products.push(productObj)
       localStorage.setItem(this.keyName, JSON.stringify(products));
+      this.checkStorage()
     }
     // return { products, productObj, indexInStorage }
+  }
+
+  clearStorage() {
+    localStorage.setItem(this.keyName, JSON.stringify([]));
   }
 
   removeProduct(indexInStorage) {
     let products = this.getProducts();
     products.splice(indexInStorage, 1)
     localStorage.setItem(this.keyName, JSON.stringify(products));
+  }
+
+  checkStorage() {
+    const products = localStorageUtil.getProducts();
+    products.forEach((item) => {
+      if (item.count == 0) {
+        console.log(item);
+        this.removeProduct(products.indexOf(item));
+      }
+    })
   }
 }
 

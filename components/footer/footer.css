@@ -1,0 +1,39 @@
+.footer {
+
+}
+
+.footer__container {
+  max-width: 1800px;
+}
+
+.footer__content {
+  border: 1px solid rgba(0, 0, 0, .125);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__items {}
+
+.footer__item {}
+
+.footer__item--title {}
+
+.footer__item--bold {}
+
+.footer__items-box {}
+
+.footer__socials {}
+
+.footer__social {}
+
+.footer__form {}
+
+.footer__form-title {}
+
+.footer__form-input {}
+
+.footer__bottom {
+  text-align: center;
+}

@@ -3,9 +3,9 @@ class Products {
   handleSetLocalStorage(id) {
     const allProductsInStorage = localStorageUtil.getProducts();
     const elem = document.querySelector(`[data-mainId="${id}"]`);
-    const elemCounter = +elem.querySelector(".main__counter-current").innerText;
-    localStorageUtil.putProduct(id, elemCounter)
-
+    let elemCounter = elem.querySelector(".main__counter-current")
+    localStorageUtil.putProduct(id, +elemCounter.innerText)
+    elemCounter.innerText = "1";
     shoppingCartContainer.render()
     shoppingCartContainer.toggleCartStatus();
     shoppingCartContainer.calcCartPriceAndDelivery();
