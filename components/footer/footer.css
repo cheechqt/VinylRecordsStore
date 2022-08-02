@@ -1,6 +1,4 @@
-.footer {
-
-}
+.footer {}
 
 .footer__container {
   max-width: 1800px;
@@ -11,29 +9,115 @@
   border-radius: 6px;
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding: 34px 15px 15px 15px;
 }
 
-.footer__items {}
+.footer__items {
+  font-size: 14px;
+  padding: 0 24px 0 0;
+  margin: 0;
+}
 
-.footer__item {}
+.footer__items--additional {}
 
-.footer__item--title {}
+@media (max-width: 1200px) {
+  .footer__items--additional {
+    display: none;
+  }
+}
 
-.footer__item--bold {}
+.footer__item {
+  color: grey;
+  padding-bottom: 1rem;
+}
+
+.footer__item--bold {
+  font-size: 20px;
+  color: inherit;
+}
 
 .footer__items-box {}
 
-.footer__socials {}
+.footer__socials {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+}
 
-.footer__social {}
+.footer__social {
+  margin-right: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-.footer__form {}
+.footer__social--youtube {
+  margin-top: 6px;
+}
 
-.footer__form-title {}
+.footer__form {
+  margin-left: 390px;
+}
 
-.footer__form-input {}
+@media (max-width: 1440px) {
+  .footer__form {
+    margin-left: 240px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__form {
+    margin-left: 140px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer__form {
+    margin-left: 0px;
+  }
+
+  .footer__content {
+    justify-content: space-between;
+  }
+}
+
+.footer__form-title {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 12px;
+  max-width: 350px;
+}
+
+.footer__form-input {
+  font-family: inherit;
+  display: block;
+  min-width: 350px;
+  height: calc(1.5em + 1.25rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #000;
+  background-color: #adafb1;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  margin-bottom: 15px;
+}
 
 .footer__bottom {
   text-align: center;
+}
+
+@media (max-width: 580px) {
+  .footer__form {
+    display: none;
+  }
+
+  .footer__content {
+    justify-content: center;
+    text-align: center;
+  }
 }

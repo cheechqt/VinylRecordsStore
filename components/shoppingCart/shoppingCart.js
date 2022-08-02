@@ -162,7 +162,7 @@ class ShoppingCart {
             <div class="aside__form">
               <h5 class="aside__form-title">Place an order</h5>
               <form>
-                <input class="aside__form-input" placeholder="Your email"
+                <input class="aside__form-input" placeholder="Your e-mail"
                   type="email" required>
                 <button type="submit" class="aside__form-btn">Order now</button>
               </form>
